@@ -1,9 +1,9 @@
 <app-navbar></app-navbar>
-<div class="container">
-  <app-subject></app-subject>
-</div>
-
 <!-- <div class="container">
+  <app-subject></app-subject>
+</div> -->
+
+<div class="container">
   <app-parent></app-parent>
 
   <div class="col-md-4">
@@ -11,15 +11,21 @@
     <input type="text" class="form-control" #data />
 
     <div class="my-4">
-      <button class="btn btn-primary mx-4" (click)="findPrimeNumber(data.value)">
+      <button
+        class="btn btn-primary mx-4"
+        (click)="findPrimeNumber(data.value)"
+      >
         without web-worker
       </button>
-      <button class="btn btn-primary" (click)="findPrimeNumberWithWorker(data.value)">
+      <button
+        class="btn btn-primary"
+        (click)="findPrimeNumberWithWorker(data.value)"
+      >
         with web-worker
       </button>
     </div>
 
-    <p> ANS with worker: {{prime}}</p>
-    <p> ANS without worker: {{primeWithWorker}}</p>
+    <p>ANS with worker: {{ prime }}</p>
+    <p>ANS without worker: {{ primeWithWorker }}</p>
   </div>
-</div> -->
+</div>
